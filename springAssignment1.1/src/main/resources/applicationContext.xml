@@ -10,7 +10,7 @@
     <context:property-placeholder location="classpath:Team.Properties"></context:property-placeholder>
     <bean id="project" class="PracticeSpringAssignment.ProjectDetails.Project"></bean>
 
-    <bean id="MyUser" class="PracticeSpringAsssignment.Team" init-method="initMethod" destroy-method="destroyMethod">
+    <bean id="MyUser" class="PracticeSpringAssignment.Team" init-method="initMethod" destroy-method="destroyMethod">
 
         <constructor-arg ref="project"/>
        <property name="teamName" value="${Team.teamName}"/>
